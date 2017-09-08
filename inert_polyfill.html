@@ -91,6 +91,7 @@
 
                 var _this = _possibleConstructorReturn(this, (XProduct.__proto__ || Object.getPrototypeOf(XProduct)).call(this));
                 console.log('constructing', _this.tagName, 'with data-name =', _this.getAttribute('data-name'));
+                
                 var img = document.createElement('img');
                 img.alt = _this.getAttribute('data-name');
                 img.src = _this.getAttribute('data-img');
@@ -98,7 +99,9 @@
                 img.height = '150';
                 img.className = 'product-img';
 
-                _this.appendChild(img);
+                //_this.appendChild(img);
+                _this.innerHTML = '';
+                _this.innerHTML = img.outerHTML;
 
                 return _this;
             }
