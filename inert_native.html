@@ -10,7 +10,7 @@
 
 <body>
     <x-product data-name="Python" data-img="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/python.png" data-url="http://example.com/3"></x-product>
-    
+
     <script type="text/javascript">
         'use strict';
         // example from https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements transpiled into ES5 by babel
@@ -73,13 +73,13 @@
                 get: function get() {
                     return ['data-name'];
                 }
-           }]);
+            }]);
 
             function XProduct() {
                 _classCallCheck(this, XProduct);
 
                 var _this = _possibleConstructorReturn(this, (XProduct.__proto__ || Object.getPrototypeOf(XProduct)).call(this));
-                
+
                 var shadow = _this.attachShadow({
                     mode: 'open'
                 });
@@ -94,7 +94,7 @@
 
                 // Add the image to the shadow root.
                 shadow.appendChild(img);
-                
+
                 return _this;
             }
 
