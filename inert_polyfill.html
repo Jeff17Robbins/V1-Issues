@@ -91,11 +91,6 @@
 
                 var _this = _possibleConstructorReturn(this, (XProduct.__proto__ || Object.getPrototypeOf(XProduct)).call(this));
 
-                var shadow = _this.attachShadow({
-                    mode: 'open'
-                });
-
-                // Create a standard img element and set its attributes.
                 var img = document.createElement('img');
                 img.alt = _this.getAttribute('data-name');
                 img.src = _this.getAttribute('data-img');
@@ -103,8 +98,7 @@
                 img.height = '150';
                 img.className = 'product-img';
 
-                // Add the image to the shadow root.
-                shadow.appendChild(img);
+                _this.appendChild(img);
 
                 return _this;
             }
@@ -113,7 +107,6 @@
         }(HTMLElement);
 
         customElements.define('x-product', XProduct);
-        
         
         var container = document.createElement('template');
         container.innerHTML = '<x-product data-name="Inert"></x-product>';
