@@ -100,7 +100,7 @@
                 img.className = 'product-img';
 
                 //_this.appendChild(img);  // this works
-                _this.innerHTML = img.outerHTML;  // this creates an infinite loop in the polyfill
+                _this.innerHTML = img.outerHTML;  // this creates a recursive loop in the polyfill
 
                 return _this;
             }
