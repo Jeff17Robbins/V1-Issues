@@ -6,7 +6,7 @@ https://jeff17robbins.github.io/V1-Issues/inert_native.html
 
 https://jeff17robbins.github.io/V1-Issues/inert_polyfill.html
 
+
+2. IE11 polyfill `.innerHTML` causes recursive construction
+
 https://jeff17robbins.github.io/V1-Issues/inert_polyfill_innerHTML.html
-
-
-2. IE11 polyfill `.innerHTML` can cause double construction
