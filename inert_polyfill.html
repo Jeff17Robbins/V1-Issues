@@ -72,7 +72,10 @@
                     console.log('attributeChangedCallback', this.tagName, attributeName, oldValue, newValue);
                     var instance = this.getAttribute('data-name');
                     var output = document.getElementById(instance);
-                    output.innerHTML = newValue;
+                    if (attributeName === 'Inert')
+                        output.innerHTML = 'not ' + newValue;
+                    else
+                        output.innerHTML = newValue;
                 }
             }], [{
                 key: 'observedAttributes',
