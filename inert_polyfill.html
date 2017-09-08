@@ -72,7 +72,7 @@
                     console.log('attributeChangedCallback', this.tagName, attributeName, oldValue, newValue);
                     var instance = this.getAttribute('data-name');
                     var output = document.getElementById(instance);
-                    output.innerText = newValue;
+                    output.innerHTML = newValue;
                 }
             }], [{
                 key: 'observedAttributes',
