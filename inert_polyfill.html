@@ -90,7 +90,7 @@
                 _classCallCheck(this, XProduct);
 
                 var _this = _possibleConstructorReturn(this, (XProduct.__proto__ || Object.getPrototypeOf(XProduct)).call(this));
-
+                console.log('constructing', _this.tagName, 'with data-name =', _this.getAttribute('data-name'));
                 var img = document.createElement('img');
                 img.alt = _this.getAttribute('data-name');
                 img.src = _this.getAttribute('data-img');
