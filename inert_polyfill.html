@@ -72,7 +72,7 @@
                     console.log('attributeChangedCallback', this.tagName, attributeName, oldValue, newValue);
                     var instance = this.getAttribute('data-name');
                     var output = document.getElementById(instance);
-                    if (attributeName === 'Inert')
+                    if (newValue === 'Inert')
                         output.innerHTML = 'not ' + newValue;
                     else
                         output.innerHTML = newValue;
