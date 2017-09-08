@@ -68,7 +68,12 @@
                 get: function get() {
                     return ['name'];
                 }
-            }]);
+            },  {
+                key: "attributeChangedCallback",
+                value: function attributeChangedCallback(attributeName, oldValue, newValue) {
+                    console.log('attributeChangedCallback', this.tagName, attributeName, oldValue, newValue);
+                }
+           }]);
 
             function XProduct() {
                 _classCallCheck(this, XProduct);
