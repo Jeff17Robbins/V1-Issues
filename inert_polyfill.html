@@ -117,10 +117,8 @@
         
         var container = document.createElement('template');
         //container.innerHTML = '<x-product data-name="Inert"></x-product>';
-        //container.content.ownerDocument.body.innerHTML = '<x-product data-name="Inert"></x-product>';
-        var myX = container.content.ownerDocument.createElement('x-product');
-        myX.setAttribute('data-name', 'Inert');
-        container.content.ownerDocument.body.appendChild(myX);
+        container.content.innerHTML = '<x-product data-name="Inert"></x-product>';
+
         var myXProduct = container.content.querySelector('x-product');
         console.log('myProduct', myXProduct.outerHTML);
 
