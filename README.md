@@ -1,8 +1,6 @@
 # V1-Issues
 
-1. `<template>` not inert under polyfill on IE11
-
-https://jeff17robbins.github.io/V1-Issues/inert_native.html
+1. `<template>` not inert under polyfill on IE11 (https://github.com/webcomponents/webcomponentsjs/issues/840)
 
 https://jeff17robbins.github.io/V1-Issues/inert_polyfill.html
 
