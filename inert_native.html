@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    <x-product data-name="Python" data-img="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/python.png" data-url="http://example.com/3"></x-product>
+    <x-product data-name="Python" data-img="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/python.png" data-url="http://example.com/3">
+    </x-product>
+    <div id="Inert">should not get overwritten</div>
+    <div id="Python">should get overwritten</div>
 
     <script type="text/javascript">
         'use strict';
@@ -67,6 +70,9 @@
                 key: "attributeChangedCallback",
                 value: function attributeChangedCallback(attributeName, oldValue, newValue) {
                     console.log('attributeChangedCallback', this.tagName, attributeName, oldValue, newValue);
+                    var instance = this.getAttribute('data-name');
+                    var output = document.getElementById(instance);
+                    output.innerText = newValue;
                 }
             }], [{
                 key: 'observedAttributes',
