@@ -1,6 +1,6 @@
 # V1-Issues
 
-https://jeff17robbins.github.io/v1-Issues/inert-native.html
+https://jeff17robbins.github.io/v1-Issues/inert_native.html
 
 1. `<template>` not inert under polyfill on IE11
 
