@@ -99,8 +99,8 @@
                 img.height = '150';
                 img.className = 'product-img';
 
-                //_this.appendChild(img);  // this works
-                _this.innerHTML = img.outerHTML;  // this creates an infinite loop on Edge and IE11
+                _this.appendChild(img);  // this works
+                //_this.innerHTML = img.outerHTML;  // this creates an infinite loop on Edge and IE11
 
                 return _this;
             }
