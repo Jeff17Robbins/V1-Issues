@@ -63,15 +63,15 @@
         var XProduct = function(_HTMLElement) {
             _inherits(XProduct, _HTMLElement);
 
-            _createClass(XProduct, null, [{
-                key: 'observedAttributes',
-                get: function get() {
-                    return ['name'];
-                }
-            },  {
+            _createClass(XProduct, [{
                 key: "attributeChangedCallback",
                 value: function attributeChangedCallback(attributeName, oldValue, newValue) {
                     console.log('attributeChangedCallback', this.tagName, attributeName, oldValue, newValue);
+                }
+            }], [{
+                key: 'observedAttributes',
+                get: function get() {
+                    return ['data-name'];
                 }
            }]);
 
