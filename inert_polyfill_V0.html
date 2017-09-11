@@ -36,7 +36,7 @@
                     output.innerHTML = newValue;
             };
 
-            window.MyElement = thatDoc.registerElement('x-product', {
+            window.MyElement = document.registerElement('x-product', {
                 prototype: MyElementProto
             });
         })(window, document);
