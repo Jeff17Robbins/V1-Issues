@@ -17,6 +17,9 @@
         (function(window, document, undefined) {
             var MyElementProto = Object.create(HTMLElement.prototype);
             MyElementProto.createdCallback = function() {
+                
+                console.log('creating', this.tagName, 'with data-name =', this.getAttribute('data-name'));
+                
                 var img = document.createElement('img');
                 img.alt = this.getAttribute('data-name');
                 img.src = this.getAttribute('data-img');
