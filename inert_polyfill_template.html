@@ -112,7 +112,7 @@
         
         var container = document.createElement('div');
         container.innerHTML = '<template><x-product data-name="Inert"></x-product></template>';
-        var myXProduct = container.firstElementChild.content.firstElementChild.querySelector('x-product');
+        var myXProduct = container.firstElementChild.content.querySelector('x-product');
         console.log('myProduct', myXProduct.outerHTML);
 
     </script>
