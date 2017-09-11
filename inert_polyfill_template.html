@@ -110,8 +110,8 @@
 
         customElements.define('x-product', XProduct);
         
-        var container = document.createElement('template');
-        container.innerHTML = '<x-product data-name="Inert"></x-product>';
+        var container = document.createElement('div');
+        container.innerHTML = '<template><x-product data-name="Inert"></x-product></template>';
         var myXProduct = container.content.querySelector('x-product');
         console.log('myProduct', myXProduct.outerHTML);
 
