@@ -3785,8 +3785,13 @@ var nodeMixin = {
 
   get isConnected() {
     var ownerDocument = this.ownerDocument;
+    
+	  // JSR patch for $0.getRootNode in console crash
+    if (ownerDocument === null) return true;
+    
     // JSR patch for IE11 template polyfill inertness
     if (ownerDocument && ownerDocument.title === 'template') return false;
+	  
     if (ownerDocument && ownerDocument.contains && ownerDocument.contains(this)) return true;
     var ownerDocumentElement = ownerDocument.documentElement;
     if (ownerDocumentElement && ownerDocumentElement.contains && ownerDocumentElement.contains(this)) return true;
