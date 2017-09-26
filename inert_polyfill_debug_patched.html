@@ -118,7 +118,7 @@
         
         var div = document.createElement('div');
         div.id = 'allTagsContainer';
-        document.appendChild(div);
+        document.body.appendChild(div);
         tags.forEach(function(tag) {           
             div.appendChild(document.createElement(tag));
         });
