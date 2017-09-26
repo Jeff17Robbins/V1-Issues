@@ -116,9 +116,13 @@
         var myXProduct = container.content.querySelector('x-product');
         console.log('myProduct', myXProduct.outerHTML);
         
-        tags.forEach(function(tag) {
-            console.log(tag);
+        var div = document.createElement('div');
+        div.id = 'allTagsContainer';
+        document.appendChild(div);
+        tags.forEach(function(tag) {           
+            div.appendChild(document.createElement(tag));
         });
+        console.log(div.outerHTML);
 
     </script>
 </body>
