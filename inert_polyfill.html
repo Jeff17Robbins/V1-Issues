@@ -78,6 +78,10 @@
                         output.innerHTML = 'not ' + newValue;
                     else
                         output.innerHTML = newValue;
+                },
+                key: "connectedCallback",
+                value: function connectedCallback() {
+                    debugger;
                 }
             }], [{
                 key: 'observedAttributes',
@@ -85,10 +89,6 @@
                     return ['data-name'];
                 }
             }]);
-            
-            function connectedCallback() {
-                debugger;
-            }
 
             function XProduct() {
                 _classCallCheck(this, XProduct);
