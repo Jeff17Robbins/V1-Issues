@@ -118,6 +118,9 @@
         container.innerHTML = '<x-product data-name="Inert"></x-product>';
         var myXProduct = container.content.querySelector('x-product');
         console.log('myProduct', myXProduct.outerHTML);
+        
+        var newXProd = document.createElement('x-product');
+        document.body.appendChild(newXProd);
 
     </script>
 </body>
